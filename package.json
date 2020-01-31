@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/style.css"
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch"
   },
   "devDependencies": {
     "node-sass": "^4.13.1"
