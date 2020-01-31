@@ -19,7 +19,7 @@ body {
 .header {
 
   .nav-main {
-    font-size: 1.3rem;
+    font-size: 1.38rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,6 +40,34 @@ body {
       color: rgba(5, 21, 87, 0.3);
       
       &__item {
+
+        &--1 {
+          &:active,
+          &:hover {
+            color: rgba(5, 21, 87, 0.8);
+          }
+        }
+
+        &--2 {
+         &:active,
+         &:hover {
+          color: rgba(5, 21, 87, 0.8);          
+          }        
+        }
+
+        &--3 {
+          &:active,
+          &:hover {
+            color: rgba(5, 21, 87, 0.8);         
+          }        
+        }
+
+        &--4 {
+          &:active,
+          &:hover {
+            color: rgba(5, 21, 87, 0.8);           
+          }        
+        }
         
       }
     }
