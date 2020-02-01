@@ -53,3 +53,50 @@ body {
   background-color: #777;
   color: #eee;
   text-decoration: none; }
+
+.section-about {
+  height: 100vh; }
+
+.section-join {
+  height: 40vh;
+  background-color: #013324;
+  color: #eee;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.4rem; }
+  .section-join__section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem 0; }
+  .section-join__section__item {
+    flex: 0 0 20%; }
+
+.section-user {
+  font-size: 1.4rem;
+  height: 9vh;
+  display: flex;
+  flex-direction: row; }
+  .section-user__section {
+    text-align: center;
+    align-content: center; }
+    .section-user__section--agent {
+      width: 50%; }
+    .section-user__section--appstore {
+      background-color: #068039;
+      width: 50%;
+      color: #eee; }
+
+.footer {
+  height: 25vh;
+  background-color: #07075c;
+  color: #777;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__section {
+    line-height: 2rem; }
+    .footer__section__heading {
+      font-weight: 600; }

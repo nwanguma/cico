@@ -98,3 +98,70 @@ body {
   color: #eee;
   text-decoration: none; 
 }
+
+.section-about {
+  height: 100vh;
+}
+
+.section-join {
+  height: 40vh;
+  background-color: rgb(1, 51, 36);
+  color: #eee;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+
+  &__section {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 5rem 0;
+    }    
+
+    &__item {
+      flex: 0 0 20%;
+    }
+  }
+}
+
+.section-user {
+  font-size: 1.4rem;  
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+
+  &__section {
+    text-align: center;
+    align-content: center;
+
+    &--agent {
+      width: 50%; 
+    }
+
+    &--appstore {
+      background-color: rgb(6, 128, 57); 
+      width: 50%; 
+      color: #eee;          
+    }
+  }
+}
+
+.footer {
+  height: 25vh;
+  background-color: #07075c;
+  color: #777;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  &__section {
+    line-height: 2rem;
+
+    &__heading {
+      font-weight: 600;
+    }
+  }
+}
