@@ -60,10 +60,10 @@ body {
 .section-join {
   height: 40vh;
   background-color: #013324;
-  color: #eee;
+  color: #777;
   text-align: center;
   padding: 2rem 0;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
   .section-join__section__container {
     display: flex;
     flex-direction: row;
@@ -73,13 +73,13 @@ body {
     flex: 0 0 20%; }
 
 .section-user {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   height: 9vh;
   display: flex;
   flex-direction: row; }
   .section-user__section {
     text-align: center;
-    align-content: center; }
+    vertical-align: bottom; }
     .section-user__section--agent {
       width: 50%; }
     .section-user__section--appstore {
@@ -91,7 +91,7 @@ body {
   height: 25vh;
   background-color: #07075c;
   color: #777;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
