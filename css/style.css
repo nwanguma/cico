@@ -11,6 +11,9 @@ html {
 body {
   padding: 0 4.5rem;
   font-family: 'Open sans', sans-serif; }
+  @media screen and (max-width: 1300px) {
+    body {
+      padding: 0; } }
 
 .btn {
   color: #eee;
@@ -53,7 +56,7 @@ body {
 
 .header .text-box {
   height: 68vh;
-  background-image: linear-gradient(to right bottom, rgba(29, 31, 29, 0.549), rgba(14, 14, 14, 0.8)), url(/img/cico-hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(29, 31, 29, 0.549), rgba(14, 14, 14, 0.8)), url("/img/cico-hero.jpg");
   background-size: cover;
   background-position: center;
   color: white; }
@@ -84,10 +87,10 @@ body {
   border-radius: 10px;
   text-align: center;
   font-size: 2rem;
-  background-color: rgba(119, 119, 119, 0.624); }
+  background-color: rgba(119, 119, 119, 0.851); }
 
 .section-about {
-  height: 90vh;
+  height: 100vh;
   padding: 7rem 7rem 4rem 7rem;
   text-align: center; }
   .section-about__section {
@@ -95,20 +98,29 @@ body {
     flex-direction: row;
     justify-content: space-around; }
     .section-about__section__item {
-      margin-bottom: 2.5rem; }
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: row; }
+      .section-about__section__item span {
+        display: inline-block;
+        margin-right: 2rem; }
       .section-about__section__item__text {
-        width: 65%; }
+        width: 60%;
+        color: #777; }
         .section-about__section__item__text p {
           font-size: 1.38rem; }
   .section-about .image-container {
-    flex: 0 1 40%; }
+    flex: 0 0 30%; }
+    .section-about .image-container img {
+      width: 90%;
+      height: 35rem; }
   .section-about .text-container {
     text-align: left;
     flex: 0 1 40%; }
   .section-about .section-heading--about {
     margin-bottom: 7.5rem;
     color: #777;
-    font-size: 3rem;
+    font-size: 2.9rem;
     font-weight: 400; }
     .section-about .section-heading--about-item {
       text-decoration: none;
