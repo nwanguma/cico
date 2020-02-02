@@ -141,6 +141,8 @@ body {
     padding: 5rem 0; }
   .section-join__section__item {
     flex: 0 0 20%; }
+    .section-join__section__item img {
+      color: #eee; }
   .section-join__text-container {
     width: 90%; }
     .section-join__text-container p {
@@ -166,6 +168,8 @@ body {
       background-color: #068039;
       width: 50%;
       color: #eee; }
+      .section-user__section--appstore img {
+        width: 2.5rem; }
 
 .footer {
   height: 25vh;

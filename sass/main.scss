@@ -227,6 +227,10 @@ body {
 
     &__item {
       flex: 0 0 20%;
+      
+      img {
+        color: #eee;
+      }
     }
   }
 
@@ -266,7 +270,11 @@ body {
     &--appstore {
       background-color: rgb(6, 128, 57); 
       width: 50%; 
-      color: #eee;          
+      color: #eee; 
+      
+      img {
+        width: 2.5rem;
+      }
     }
   }
 }
