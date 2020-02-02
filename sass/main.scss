@@ -89,7 +89,6 @@ body {
             color: rgba(5, 21, 87, 0.8);           
           }        
         }
-        
       }
     }
   }
@@ -137,7 +136,7 @@ body {
 
 
 .section-about {
-  height: 80vh;
+  height: 90vh;
   padding: 4rem 7rem;
   text-align: center;
 
@@ -147,11 +146,10 @@ body {
     justify-content: space-around;
 
     &__item {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
 
       &__text {
         width: 65%;
-        background-color: palegreen;
 
         p {
           font-size: 1.38rem;
@@ -170,7 +168,7 @@ body {
   }
 
   .section-heading--about {
-    margin-bottom: 8rem;
+    margin-bottom: 7.5rem;
     color: #777;
 
     &-item {
@@ -202,8 +200,23 @@ body {
     }
   }
 
+  &__text-container {
+    width: 90%;
+
+    p {
+      text-align: left;
+    }
+  }
+
   .section-heading--join {
     color: #eee;
+
+    &-item {
+      text-decoration: none;
+      color: #eee;
+      font-size: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
   }
 }
 
