@@ -44,15 +44,35 @@ body {
   background-color: orangered; }
   .header .text-box .heading {
     position: relative;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    .header .text-box .heading__primary {
+      font-size: 3.5rem;
+      color: #eee;
+      font-weight: 400;
+      letter-spacing: 3px; }
+    .header .text-box .heading__secondary {
+      font-size: 1.6rem;
+      width: 27%;
+      margin: 1rem auto;
+      color: #777; }
 
 .btn {
-  background-color: #777;
+  background-color: rgba(119, 119, 119, 0.707);
   color: #eee;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block; }
+  .btn--header {
+    margin-top: 1rem;
+    width: 30rem;
+    height: 4rem;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem; }
 
 .section-about {
   height: 100vh; }
@@ -78,8 +98,7 @@ body {
   display: flex;
   flex-direction: row; }
   .section-user__section {
-    text-align: center;
-    vertical-align: bottom; }
+    text-align: center; }
     .section-user__section--agent {
       width: 50%; }
     .section-user__section--appstore {
