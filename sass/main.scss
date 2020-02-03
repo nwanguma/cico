@@ -1,3 +1,53 @@
+// @font-face {
+//   font-family: SegoeUI;
+//   src:
+//       local("Segoe UI Light"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+//   font-weight: 100;
+// }
+
+// @font-face {
+//   font-family: SegoeUI;
+//   src:
+//       local("Segoe UI Semilight"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+//   font-weight: 200;
+// }
+
+// @font-face {
+//   font-family: SegoeUI;
+//   src:
+//       local("Segoe UI"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: SegoeUI;
+//   src:
+//       local("Segoe UI Bold"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+//   font-weight: 600;
+// }
+
+// @font-face {
+//   font-family: SegoeUI;
+//   src:
+//       local("Segoe UI Semibold"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+//       url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+//   font-weight: 700;
+// }
+
 //Basic CSS Reset
 //In a real project most of the these rules would live in different folder and scss files
 //I like to organize my CSS using the 7-1 CSS architecture leaving my main scss file to only
@@ -16,7 +66,7 @@ html {
 
 body {
   padding: 0 4.5rem;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Segoe UI', 'Open sans', sans-serif;
 
   @media screen and (max-width: 1300px) {
     padding: 0;
@@ -40,7 +90,7 @@ body {
 .header {
 
   .nav-main {
-    font-size: 1.38rem;
+    height: 6.4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,8 +107,8 @@ body {
     }
 
     .logo-box {
-      width: 8rem;
-      height: 1.8rem;
+      width: 7.832rem;
+      height: 1.652rem;
 
       .logo {
         width: 100%;
@@ -72,8 +122,11 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      font-family: 'Lato thin', sans-serif;
+      font-size: 1.4rem;
       font-weight: 100;
-      color: rgba(5, 21, 87, 0.3);
+      color: #C5C5C5;
+      opacity: 100%;
 
       @media screen and (max-width: 950px) {
         flex-basis: 60%;  
@@ -117,7 +170,7 @@ body {
   }
 
   .text-box {
-    height: 68vh;    
+    height: 41.2rem;    
     background-image: linear-gradient(
       to right bottom,
       rgba(29, 31, 29, 0.549),
@@ -176,13 +229,15 @@ body {
 
   .btn--header {
     margin-top: 1rem;
-    width: 38rem;
-    height: 2rem;
-    padding: 1.5rem 2rem 4rem 2rem;
+    width: 35.3rem;
+    height: 5rem;
+    padding: 1rem 1rem 1rem 1rem;
     border-radius: 10px;
     text-align: center;
     font-size: 2rem;
     background-color: rgba(119, 119, 119, 0.851); 
+    box-shadow: #00000029 0px 3px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.268);
     
     @media screen and (max-width: 950px) {
       width: 40%;          
@@ -196,13 +251,12 @@ body {
   }
 }
 
-
-
 .section-about {
-  height: 100vh;
+  height: 75rem;
   padding: 7rem 7rem 4rem 7rem;
   text-align: center;
   margin-bottom: 3rem;
+  position: relative;
 
   @media screen and (max-width: 950px) {
     height: 65vh;
@@ -245,7 +299,7 @@ body {
       }
 
       &__text {
-        width: 60%;
+        width: 28.5rem;
         color: #777;
 
         @media screen and (max-width: 950px) {
@@ -267,7 +321,7 @@ body {
     flex: 0 0 30%; 
     
     img {
-      width: 90%;
+      width: 120%;
       height: 35rem;
 
       @media screen and (max-width: 950px) {
@@ -279,6 +333,11 @@ body {
   .text-container {
     text-align: left;
     flex: 0 1 40%;
+    font-size: 1.5px;
+    
+    p {
+      line-height: 2.1rem;
+    }
 
     @media screen and (max-width: 950px) {
       flex-basis: 100%; 
@@ -288,8 +347,8 @@ body {
 
   .section-heading--about {
     margin-bottom: 7.5rem;
-    color: #777;
-    font-size: 2.9rem;
+    color: #707070;
+    font-size: 3rem;
     font-weight: 400;
 
     @media screen and (max-width: 950px) {
@@ -299,9 +358,10 @@ body {
 
     &-item {
       text-decoration: none;
-      color: #777; 
       margin-bottom: 2.5rem;  
-
+      font-size: 3rem;
+      font-weight: 400;
+      
       @media screen and (max-width: 950px) {
         font-size: 1.6rem;     
         margin-bottom: 1.5rem; 
@@ -311,8 +371,8 @@ body {
 }
 
 .section-join {
-  height: 40vh;
-  background-color: rgb(1, 51, 36);
+  height: 40.4rem;
+  background-color: #466563;
   color: #eee;
   text-align: center;
   padding: 2rem 0;
@@ -327,7 +387,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      padding: 5rem 0;
+      padding: 12rem 0;
 
       @media screen and (max-width: 950px) {
         flex-direction: column;
@@ -376,6 +436,9 @@ body {
 
   .section-heading--join {
     color: #eee;
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
 
     &-item {
       text-decoration: none;
@@ -388,19 +451,20 @@ body {
 
 .section-user {
   font-size: 1.3rem;  
-  height: 9vh;
+  height: 8.8rem;
   display: flex;
   flex-direction: row;
 
   &__section {
     text-align: center;
+    padding-top: 3rem;
 
     &--agent {
       width: 50%; 
     }
 
     &--appstore {
-      background-color: rgb(6, 128, 57); 
+      background-color: #008751; 
       width: 50%; 
       color: #eee; 
       
@@ -412,18 +476,20 @@ body {
 }
 
 .footer {
-  height: 25vh;
-  background-color: #07075c;
-  color: #eee;
+  height: 22.1rem;
+  background-color: #123C68;
+  padding-top: 5rem;
+  color: #C5C5C5;
   font-weight: 100;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  line-height: 2.1rem;
 
   @media screen and (max-width: 650px) {
-    height: 50vh;
+    height: 45rem;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -439,11 +505,24 @@ body {
 
     &__heading {
       font-weight: 600;
+      font-size: 1.5rem;      
+    }
+
+    p {
+      padding: 0.5rem;
+
+      @media screen and (max-width: 650px) {
+        padding: 0;
+      }
     }
 
     a {
       text-decoration: none;
       color: inherit;
+    }
+
+    &--social-media {
+      align-self: flex-start;
     }
   }
 }
