@@ -400,8 +400,19 @@ body {
   justify-content: space-around;
   align-items: center;
 
+  @media screen and (max-width: 650px) {
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   &__section {
     line-height: 2rem;
+
+    @media screen and (max-width: 650px) {
+      flex-basis: 40%;
+      margin-top: 1rem;
+    }
 
     &__heading {
       font-weight: 600;

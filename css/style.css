@@ -267,7 +267,16 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
+  @media screen and (max-width: 650px) {
+    .footer {
+      height: 50vh;
+      flex-direction: row;
+      flex-wrap: wrap; } }
   .footer__section {
     line-height: 2rem; }
+    @media screen and (max-width: 650px) {
+      .footer__section {
+        flex-basis: 40%;
+        margin-top: 1rem; } }
     .footer__section__heading {
       font-weight: 600; }
