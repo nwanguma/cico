@@ -130,7 +130,7 @@ body {
 .section-join {
   height: 40vh;
   background-color: #013324;
-  color: #777;
+  color: #eee;
   text-align: center;
   padding: 2rem 0;
   font-size: 1.3rem; }
@@ -140,7 +140,9 @@ body {
     justify-content: space-around;
     padding: 5rem 0; }
   .section-join__section__item {
-    flex: 0 0 20%; }
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: row; }
     .section-join__section__item img {
       color: #eee; }
   .section-join__text-container {
