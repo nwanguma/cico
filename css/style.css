@@ -31,6 +31,12 @@ body {
   justify-content: space-between;
   align-content: center;
   padding: 2.5rem 10rem; }
+  @media screen and (max-width: 950px) {
+    .header .nav-main {
+      padding: 2.5rem 3rem; } }
+  @media screen and (max-width: 600px) {
+    .header .nav-main {
+      padding: 2.5rem 1rem; } }
   .header .nav-main .logo-box {
     width: 8rem;
     height: 1.8rem; }
@@ -45,6 +51,12 @@ body {
     justify-content: space-between;
     font-weight: 100;
     color: rgba(5, 21, 87, 0.3); }
+    @media screen and (max-width: 950px) {
+      .header .nav-main .nav-list {
+        flex-basis: 60%; } }
+    @media screen and (max-width: 950px) {
+      .header .nav-main .nav-list {
+        flex-basis: 75%; } }
     .header .nav-main .nav-list__item--1:active, .header .nav-main .nav-list__item--1:hover {
       color: rgba(5, 21, 87, 0.8); }
     .header .nav-main .nav-list__item--2:active, .header .nav-main .nav-list__item--2:hover {
@@ -56,7 +68,7 @@ body {
 
 .header .text-box {
   height: 68vh;
-  background-image: linear-gradient(to right bottom, rgba(29, 31, 29, 0.549), rgba(14, 14, 14, 0.8)), url("/img/cico-hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(29, 31, 29, 0.549), rgba(14, 14, 14, 0.8)), url("../img/cico-hero.jpg");
   background-size: cover;
   background-position: center;
   color: white; }
@@ -66,11 +78,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media screen and (max-width: 650px) {
+      .header .text-box .heading {
+        top: 45%; } }
     .header .text-box .heading__primary {
       font-size: 5rem;
       font-weight: 400;
       letter-spacing: 3px;
       margin-bottom: 2.5rem; }
+      @media screen and (max-width: 950px) {
+        .header .text-box .heading__primary {
+          font-size: 4rem; } }
+      @media screen and (max-width: 650px) {
+        .header .text-box .heading__primary {
+          font-size: 2.5rem; } }
     .header .text-box .heading__secondary {
       color: rgba(255, 255, 255, 0.597);
       font-size: 1.5rem;
@@ -78,6 +99,13 @@ body {
       margin: 1.5rem auto;
       line-height: 1.8rem;
       font-weight: 100; }
+      @media screen and (max-width: 950px) {
+        .header .text-box .heading__secondary {
+          font-size: 1.3rem;
+          width: 50%; } }
+      @media screen and (max-width: 650px) {
+        .header .text-box .heading__secondary {
+          width: 75%; } }
 
 .header .btn--header {
   margin-top: 1rem;
@@ -88,6 +116,12 @@ body {
   text-align: center;
   font-size: 2rem;
   background-color: rgba(119, 119, 119, 0.851); }
+  @media screen and (max-width: 950px) {
+    .header .btn--header {
+      width: 40%; } }
+  @media screen and (max-width: 650px) {
+    .header .btn--header {
+      width: 60%; } }
 
 .section-about {
   height: 100vh;
