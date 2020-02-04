@@ -102,13 +102,18 @@ body {
       font-size: 1.25rem;     
     }
 
-    @media screen and (max-width: 600px) {
-      padding: 2.5rem 1rem;   
+    @media screen and (max-width: 650px) {
+      padding: 2.5rem 1rem; 
+      justify-content: space-around; 
     }
 
     .logo-box {
       width: 7.832rem;
       height: 1.652rem;
+
+      @media screen and (max-width: 650px) {
+        display: none;
+      }
 
       .logo {
         width: 100%;
