@@ -346,9 +346,10 @@ body {
   line-height: 2.1rem; }
   @media screen and (max-width: 650px) {
     .footer {
-      height: 45rem;
+      height: 40rem;
       flex-direction: row;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      padding-top: 2rem; } }
   .footer__section {
     line-height: 2rem;
     list-style-type: none; }

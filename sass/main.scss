@@ -549,9 +549,10 @@ body {
   line-height: 2.1rem;
 
   @media screen and (max-width: 650px) {
-    height: 45rem;
+    height: 40rem;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 2rem;
   }
 
   &__section {
