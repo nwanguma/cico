@@ -140,7 +140,7 @@ body {
   position: relative; }
   @media screen and (max-width: 950px) {
     .section-about {
-      height: 50rem;
+      height: 55rem;
       padding: 2rem 1rem 2rem 1rem;
       margin-bottom: 1rem; } }
   .section-about-container {
